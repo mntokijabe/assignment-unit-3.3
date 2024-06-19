@@ -91,7 +91,7 @@ console.log(`Postives: ${stretchPositives}\nNegatives: ${stretchNegatives}\nand 
 console.log('8. Looping through supplyChanges to calculate the sum:');
 let totalParts = 0;
 for (let i of supplyChanges){
-  totalParts = totalParts + i;
+  totalParts = totalParts + i;  //adds each array value to previous total
   console.log(`Total parts so far is ${totalParts}`);
 }
 
@@ -107,6 +107,14 @@ for (let i of supplyChanges){
 //    "left over," and the value of 'boxesFilled' should reflect
 //    how many boxes were filled.
 console.log('9. Filling boxes with a "while" loop');
+let parts = 572;
+let boxesFilled = 0;
+while(parts >= 7){
+  parts -= 7;
+  boxesFilled ++;
+  console.log(`Parts remaining: ${parts} \nBoxes Filled: ${boxesFilled}`);
+}
+
 
 
 
