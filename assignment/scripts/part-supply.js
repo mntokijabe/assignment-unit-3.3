@@ -89,7 +89,11 @@ console.log(`Postives: ${stretchPositives}\nNegatives: ${stretchNegatives}\nand 
 //    Then, write a loop that adds each value of the 'supplyChanges'
 //    array to the 'totalParts' variable.
 console.log('8. Looping through supplyChanges to calculate the sum:');
-
+let totalParts = 0;
+for (let i of supplyChanges){
+  totalParts = totalParts + i;
+  console.log(`Total parts so far is ${totalParts}`);
+}
 
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. There are 572
